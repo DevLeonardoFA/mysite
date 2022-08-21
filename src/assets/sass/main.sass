@@ -1,0 +1,265 @@
+*:focus, *:focus-within
+    outline: 0 !important
+    box-shadow: none !important   
+
+*::-webkit-scrollbar 
+    width: 5px
+
+*::-webkit-scrollbar-track 
+    background: #313131
+
+*::-webkit-scrollbar-thumb 
+    background: #965cff
+    border-radius: 10px
+
+*::-webkit-scrollbar-thumb:hover 
+    background: #a371ff
+
+    
+body
+    margin: 0
+    padding: 0
+    display: block
+    font-family: 'Poppins', sans-serif
+    color: #fff
+
+    a
+        color: #fff
+        text-decoration: none
+        font-weight: 600
+
+
+    .dropdown_fixo 
+        position: absolute
+        top: 1vw
+        right: 1vw
+        z-index: 2
+
+        .dropdown .btn-link
+            color: #ffffff65
+            backdrop-filter: blur(5px)
+            text-decoration: none !important
+
+        .dropdown .btn-link span
+            margin-right: 0.5vw
+
+        ul.dropdown-menu.show span.flag-icon
+            margin-right: 0.5vw
+
+
+    .menu 
+        width: 100%
+        display: flex
+        position: fixed
+        justify-content: center
+        z-index: 999
+
+        button
+            display: flex
+            align-items: center
+
+        button.active_menu 
+            box-shadow: 0 0 5px 0 #fff
+            position: absolute
+            left: 50%
+            bottom: 0
+            transform: translate(-50%, calc(100% - 1px))
+            border: none
+            background: #fff
+            border-top: none
+            border-bottom-left-radius: 5px
+            border-bottom-right-radius: 5px
+
+            span.arrow_down
+                font-weight: 700
+
+        .content_menu
+            width: max-content
+            height: 0
+            background: #fff
+            border-radius: 5px
+            overflow: hidden
+            transition: 400ms
+
+            menu
+                display: flex
+                padding: .5rem 1rem .6rem
+                height: calc(4rem + (0.6rem * 2))
+                margin: 0
+
+                a
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 4rem
+                    height: 4rem
+                    border-radius: 50px
+                    border: 1px solid #000
+                    background: #ffffff
+                    color: #0000 !important
+                    margin: 0 0.2rem
+                    cursor: pointer
+            
+            &.active
+                height: calc(4rem + (0.6rem * 2))
+
+
+    .content_redes 
+        position: fixed
+        bottom: 0
+        right: 0
+        z-index: 99
+
+        .contato.cmenu 
+            display: flex
+            padding: 1rem
+
+        .contato.cmenu .item.menu_item 
+            margin: 0 0.5rem
+
+        .contato.cmenu .item.menu_item svg 
+            fill: #fff
+            cursor: pointer
+
+        .contato.cmenu .item.menu_item:hover svg 
+            fill: #965cff
+            transform: scale(1.04)
+        
+
+    div.main
+        justify-content: flex-end
+        width: 100%
+        margin: 0
+        display: flex
+        flex-wrap: wrap
+        float: right
+
+        & > section
+            width: 100%
+            height: 100vh
+
+
+        & > section.start 
+            display: flex
+            align-items: center
+            position: relative
+            overflow: hidden
+
+            & > div
+                padding: 60px
+
+            & > div h1 
+                font-size: 6.25rem
+                margin-bottom: 10px
+                margin-top: 0
+
+            & > div h2 
+                font-size: 1.875rem
+                margin: 0
+                line-height: 1.7
+
+            & > img 
+                position: absolute
+                top: -15px
+                left: -15px
+                width: calc(100% + 30px)
+                height: calc(100% + 30px)
+                filter: blur(10px) brightness(0.2)
+                z-index: -1
+                box-shadow: none
+
+
+        & > section.about 
+            display: flex
+            align-items: center
+            position: relative
+            overflow: hidden
+            background-color: #313131
+
+            & > div
+                padding: 60px
+
+    
+
+        & > section.skills 
+            display: flex
+            align-items: center
+            position: relative
+            overflow: hidden
+            background-color: #464646
+
+            & > div
+                padding: 60px
+
+            & .technologies 
+                width: 100%
+                height: 100%
+                padding: 60px 0
+
+            & > div 
+                width: 100%
+                height: 100%
+
+            & .technologies div.card_tech 
+                height: 35vh
+                width: 100% !important
+                margin: 0 auto !important
+                background: #8c8c8c
+                border-radius: 15px
+                box-shadow: 0 0 5px 5px rgb(42, 42, 42) !important
+                display: block !important
+
+            & .technologies div.card_tech .front
+                width: 100%
+                height: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+
+            & .slick-track 
+                display: flex
+                overflow: hidden
+
+            & .slick-track .slick-slide
+                margin: 30px
+
+            & .slick-slide
+                transition: 400ms
+
+            & .slick-list 
+                overflow: hidden
+                padding: 0
+
+
+        & > section.works 
+            display: flex
+            align-items: center
+            position: relative
+            overflow: hidden
+            background-color: #333333
+
+            & > div
+                padding: 60px
+
+
+        & > section.formation 
+            display: flex
+            align-items: center
+            position: relative
+            overflow: hidden
+            background-color: #2e2e2e
+
+            & > div
+                padding: 60px
+
+
+        & > section.contact 
+            display: flex
+            align-items: center
+            position: relative
+            overflow: hidden
+            background-color: #1a1a1a
+
+            & > div
+                padding: 60px
+

@@ -1,0 +1,260 @@
+*:focus, *:focus-within {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #313131;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #965cff;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #a371ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+body a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+body .dropdown_fixo {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  z-index: 2;
+}
+body .dropdown_fixo .dropdown .btn-link {
+  color: #ffffff65;
+  backdrop-filter: blur(5px);
+  text-decoration: none !important;
+}
+body .dropdown_fixo .dropdown .btn-link span {
+  margin-right: 0.5vw;
+}
+body .dropdown_fixo ul.dropdown-menu.show span.flag-icon {
+  margin-right: 0.5vw;
+}
+body .menu {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  z-index: 999;
+}
+body .menu button {
+  display: flex;
+  align-items: center;
+}
+body .menu button.active_menu {
+  box-shadow: 0 0 5px 0 #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, calc(100% - 1px));
+  border: none;
+  background: #fff;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+body .menu button.active_menu span.arrow_down {
+  font-weight: 700;
+}
+body .menu .content_menu {
+  width: max-content;
+  height: 0;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 400ms;
+}
+body .menu .content_menu menu {
+  display: flex;
+  padding: 0.5rem 1rem 0.6rem;
+  height: 5.2rem;
+  margin: 0;
+}
+body .menu .content_menu menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: #ffffff;
+  color: #0000 !important;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+body .menu .content_menu.active {
+  height: 5.2rem;
+}
+body .content_redes {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+body .content_redes .contato.cmenu {
+  display: flex;
+  padding: 1rem;
+}
+body .content_redes .contato.cmenu .item.menu_item {
+  margin: 0 0.5rem;
+}
+body .content_redes .contato.cmenu .item.menu_item svg {
+  fill: #fff;
+  cursor: pointer;
+}
+body .content_redes .contato.cmenu .item.menu_item:hover svg {
+  fill: #965cff;
+  transform: scale(1.04);
+}
+body div.main {
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+}
+body div.main > section {
+  width: 100%;
+  height: 100vh;
+}
+body div.main > section.start {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+body div.main > section.start > div {
+  padding: 60px;
+}
+body div.main > section.start > div h1 {
+  font-size: 6.25rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+body div.main > section.start > div h2 {
+  font-size: 1.875rem;
+  margin: 0;
+  line-height: 1.7;
+}
+body div.main > section.start > img {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  filter: blur(10px) brightness(0.2);
+  z-index: -1;
+  box-shadow: none;
+}
+body div.main > section.about {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #313131;
+}
+body div.main > section.about > div {
+  padding: 60px;
+}
+body div.main > section.skills {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #464646;
+}
+body div.main > section.skills > div {
+  padding: 60px;
+}
+body div.main > section.skills .technologies {
+  width: 100%;
+  height: 100%;
+  padding: 60px 0;
+}
+body div.main > section.skills > div {
+  width: 100%;
+  height: 100%;
+}
+body div.main > section.skills .technologies div.card_tech {
+  height: 35vh;
+  width: 100% !important;
+  margin: 0 auto !important;
+  background: #8c8c8c;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 5px #2a2a2a !important;
+  display: block !important;
+}
+body div.main > section.skills .technologies div.card_tech .front {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body div.main > section.skills .slick-track {
+  display: flex;
+  overflow: hidden;
+}
+body div.main > section.skills .slick-track .slick-slide {
+  margin: 30px;
+}
+body div.main > section.skills .slick-slide {
+  transition: 400ms;
+}
+body div.main > section.skills .slick-list {
+  overflow: hidden;
+  padding: 0;
+}
+body div.main > section.works {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #333333;
+}
+body div.main > section.works > div {
+  padding: 60px;
+}
+body div.main > section.formation {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #2e2e2e;
+}
+body div.main > section.formation > div {
+  padding: 60px;
+}
+body div.main > section.contact {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+body div.main > section.contact > div {
+  padding: 60px;
+}
+
+/*# sourceMappingURL=main.css.map */
