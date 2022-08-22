@@ -1,14 +1,14 @@
-import start from '../assets/img/start.webp';
-
 export function About(){
-    return (
-        <section className="start" id="start">
-            <div className="conteudo">
-                <h1>Hi! I'm Leo</h1>
-                <h2>Here I'll share all my ideas and my current projects, <br />
-                if you want to see them and send me a message I'll be glad</h2>
-            </div>
-            <img src={start} alt="start"/>
-        </section>
-    );
+return (
+<section className="about" id="about">
+    <div className="conteudo">
+        <h2>Who I'am?</h2>
+        <h3>I'm a 23 year old web developer, currently working as a Front-end and Back-end, <br />
+            I love working with it, creating and seeing it working is amazing!</h3>
+        <h3>My professional goal is always to try to be better day after day,<br />
+            for that reason challenges are welcome as well as feedback from my teammates that I take as fuel to improve.
+        </h3>
+    </div>
+</section>
+);
 }
