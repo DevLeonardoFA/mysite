@@ -12,7 +12,7 @@ export function Projects(){
                 
                 { 
                 
-                projects.map( project => (
+                projects && projects.map( project => (
                     <div className="project" key={project.id}>
                         <a href={project.link} target="_blank" rel="noopener noreferrer" className='open_project'>
                             <img src={project.image} alt={project.title} />

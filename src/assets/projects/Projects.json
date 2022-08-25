@@ -4,55 +4,55 @@
         "title": "Himaflex",
         "color": "",
         "link": "https://www.himaflex.com.br/",
-        "image": "/assets/img/Himaflex_frontpage.webp"
+        "image": "/img/Himaflex_frontpage.webp"
     },
     {
         "id": "1",
         "title": "Colégio Alternativo Hortolândia",
         "color": "",
         "link": "https://www.alternativohortolandia.com.br/",
-        "image": "/assets/img/AlternativoHortolandia_frontpage.webp"
+        "image": "/img/AlternativoHortolandia_frontpage.webp"
     },
     {
         "id": "2",
         "title": "BF Equipamentos",
         "color": "",
         "link": "https://www.bfequipamentos.com.br/",
-        "image": "/assets/img/BFEquipamentos_frontpage.webp"
+        "image": "/img/BFEquipamentos_frontpage.webp"
     },
     {
         "id": "3",
         "title": "Império Motors",
         "color": "",
         "link": "https://imperiomotors.com.br/",
-        "image": "/assets/img/ImperioMotors_frontpage.webp"
+        "image": "/img/ImperioMotors_frontpage.webp"
     },
     {
         "id": "4",
         "title": "PMEH Advocacia",
         "color": "",
         "link": "#",
-        "image": "/assets/img/pmeh_frontpage.webp"
+        "image": "/img/pmeh_frontpage.webp"
     },
     {
         "id": "5",
         "title": "Liandretta",
         "color": "",
         "link": "https://www.liandretta.com.br/",
-        "image": "/assets/img/Liandretta_frontpage.webp"
+        "image": "/img/Liandretta_frontpage.webp"
     },
     {
         "id": "6",
         "title": "Sana Green - Journal",
         "color": "",
         "link": "https://journal.sanagreen.com.br",
-        "image": "/assets/img/sana_journal_frontpage.webp"
+        "image": "/img/sana_journal_frontpage.webp"
     },
     {
         "id": "7",
         "title": "Tabela de Itens e Quantidade Controlados",
         "color": "",
         "link": "https://primobands.com.br/",
-        "image": "/assets/img/Tabela_de_item_e_quantidade_PrimoBands.webp"
+        "image": "/img/Tabela_de_item_e_quantidade_PrimoBands.webp"
     }
 ]

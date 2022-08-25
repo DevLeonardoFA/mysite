@@ -1,4 +1,4 @@
-import start from '../assets/img/start.webp';
+import start from '/img/start.webp';
 
 export function Wellcome(){
     return (
