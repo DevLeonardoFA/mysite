@@ -4,6 +4,11 @@ import projects from '../assets/projects/projects.json';
 export function Projects(){
     return (
         <section className="projects" id="projects">
+            <div className="title">
+                <h2>
+                    My Sites and Projects
+                </h2>
+            </div>
             <div className="conteudo">
                 
                 { 

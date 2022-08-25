@@ -1,65 +1,58 @@
 [
     {
-        "id": "1",
-        "title": "Projet 1",
-        "color": "#965cff",
-        "link": "https://www.google.com",
-        "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-    },
-    {
-        "id": "2",
-        "title": "Projet 2",
-        "color": "#ffee5b",
-        "link": "https://www.google.com/s=maps",
-        "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-    },
-    {
-        "id": "3",
-        "title": "Projet 3",
-        "color": "#ef8282",
-        "link": "",
-        "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        "id": "0",
+        "title": "Himaflex",
+        "color": "",
+        "link": "https://www.himaflex.com.br/",
+        "image": "/src/assets/img/ImperioMotors_frontpage.webp"
     },
     {
         "id": "1",
-        "title": "Projet 1",
-        "color": "#965cff",
-        "link": "",
-        "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        "title": "Colégio Alternativo Hortolândia",
+        "color": "",
+        "link": "https://www.alternativohortolandia.com.br/",
+        "image": "/src/assets/img/AlternativoHortolandia_frontpage.webp"
     },
     {
         "id": "2",
-        "title": "Projet 2",
-        "color": "#ffee5b",
-        "link": "",
-        "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        "title": "BF Equipamentos",
+        "color": "",
+        "link": "https://www.bfequipamentos.com.br/",
+        "image": "/src/assets/img/BFEquipamentos_frontpage.webp"
     },
     {
         "id": "3",
-        "title": "Projet 3",
-        "color": "#ef8282",
-        "link": "",
-        "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        "title": "Império Motors",
+        "color": "",
+        "link": "https://imperiomotors.com.br/",
+        "image": "/src/assets/img/ImperioMotors_frontpage.webp"
     },
     {
-        "id": "1",
-        "title": "Projet 1",
-        "color": "#965cff",
-        "link": "",
-        "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        "id": "4",
+        "title": "PMEH Advocacia",
+        "color": "",
+        "link": "#",
+        "image": "/src/assets/img/pmeh_frontpage.webp"
     },
     {
-        "id": "2",
-        "title": "Projet 2",
-        "color": "#ffee5b",
-        "link": "",
-        "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        "id": "5",
+        "title": "Liandretta",
+        "color": "",
+        "link": "https://www.liandretta.com.br/",
+        "image": "/src/assets/img/Liandretta_frontpage.webp"
     },
     {
-        "id": "3",
-        "title": "Projet 3",
-        "color": "#ef8282",
-        "link": "",
-        "image": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        "id": "6",
+        "title": "Sana Green - Journal",
+        "color": "",
+        "link": "https://journal.sanagreen.com.br",
+        "image": "/src/assets/img/sana_journal_frontpage.webp"
+    },
+    {
+        "id": "7",
+        "title": "Tabela de Itens e Quantidade Controlados",
+        "color": "",
+        "link": "https://primobands.com.br/",
+        "image": "/src/assets/img/Tabela_de_item_e_quantidade_PrimoBands.webp"
     }
 ]
