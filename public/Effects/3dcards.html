@@ -79,7 +79,7 @@
     .box{
         position: absolute;
         transform-style: preserve-3d;
-        top: 18%;
+        top: 22vh;
     }
     .box .cube{
         position: relative;
@@ -196,10 +196,63 @@
     }
 
 
+    @media(max-width: 1024px){
+
+        .box .cube div span {
+            transform: rotateY(calc(90deg * var(--i))) translateZ(7.708333vw);
+        }
+
+        .box .cube {
+            width: 15.416667vw;
+        }
+
+        .box {
+            top: 25vh;
+        }
+
+    }
+    @media(max-width: 991px){
+
+        section {
+            transform: perspective(50.458333vw);
+        }
+
+        .box {
+            top: 28vh;
+        }
+
+        .box .cube {
+            width: 25.416667vw;
+        }
+
+        .box .cube div span {
+            transform: rotateY(calc(90deg * var(--i))) translateZ(12.708333vw);
+        }
+
+        .box .cube .top::before {
+            transform: translateZ(calc(-18.416667vw * 2));
+        }
 
 
+    }
+    @media(max-width: 425px){
+        .box .cube .top::before {
+            transform: translateZ(calc(-28.416667vw * 2));
+            width: calc(30.416667vw * 2);
+        }
 
+        .box .cube {
+            width: 40.416667vw;
+        }
 
+        .box .cube div span {
+            transform: rotateY(calc(90deg * var(--i))) translateZ(20.208333vw);
+        }
+
+        section {
+            transform: perspective(100vw);
+        }
+    }
 
 
 
