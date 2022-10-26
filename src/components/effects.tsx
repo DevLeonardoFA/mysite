@@ -11,7 +11,7 @@ export function Effects(){
 
         <div className="Effects_cards">
 
-            <iframe src="public\Effects\3dcards.html"></iframe>
+            <iframe src="Effects\3dcards.html"></iframe>
 
         </div>
 
