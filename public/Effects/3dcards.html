@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Box</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: #1D0035;
+        min-height: 100vh;
+        overflow: hidden;
+        --main_color: #f85f01;
+        --second_color: #ffb080;
+        --boxshadow: 0 0 6.510416666666667vw rgb(251, 98, 0.2),
+        0 0 6.510416666666667vw rgb(251, 98, 0.4),
+        0 0 6.510416666666667vw rgb(251, 98, 0.6),
+        0 0 6.510416666666667vw rgb(251, 98, 0.8),
+        0 0 6.510416666666667vw rgb(251, 98, 1);
+    }
+
+    body.red{
+        --main_color: #ff0000;
+        --second_color: rgb(255, 79, 79);
+        --boxshadow: 0 0 6.510416666666667vw rgb(255, 0, 0.2),
+        0 0 6.510416666666667vw rgb(255, 0, 0.4),
+        0 0 6.510416666666667vw rgb(255, 0, 0.6),
+        0 0 6.510416666666667vw rgb(255, 0, 0.8),
+        0 0 6.510416666666667vw rgb(255, 0, 1);
+    }
+    body.blue255{
+        --main_color: #0000ff;
+        --second_color: rgb(65, 65, 255);
+        --boxshadow: 0 0 6.510416666666667vw rgb(0, 98, 255.2),
+        0 0 6.510416666666667vw rgb(0, 98, 255.4),
+        0 0 6.510416666666667vw rgb(0, 98, 255.6),
+        0 0 6.510416666666667vw rgb(0, 98, 255.8),
+        0 0 6.510416666666667vw rgb(0, 98, 255);
+    }
+    body.pink{
+        --main_color: #9c27b0;
+        --second_color: #ed81ff;
+        --boxshadow: 0 0 6.510416666666667vw rgb(156, 39, 176.2),
+        0 0 6.510416666666667vw rgb(156, 39, 176.4),
+        0 0 6.510416666666667vw rgb(156, 39, 176.6),
+        0 0 6.510416666666667vw rgb(156, 39, 176.8),
+        0 0 6.510416666666667vw rgb(156, 39, 176),
+    }
+    body.orange{
+        --main_color: #f85f01;
+        --second_color: #ffb080;
+        --boxshadow: 0 0 6.510416666666667vw rgb(251, 98, 0.2),
+        0 0 6.510416666666667vw rgb(251, 98, 0.4),
+        0 0 6.510416666666667vw rgb(251, 98, 0.6),
+        0 0 6.510416666666667vw rgb(251, 98, 0.8),
+        0 0 6.510416666666667vw rgb(251, 98, 1);
+    }
+
+
+
+
+    
+    section{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        transform: perspective(36.458333333333336vw);
+    }
+    .box{
+        position: absolute;
+        transform-style: preserve-3d;
+        top: 18%;
+    }
+    .box .cube{
+        position: relative;
+        width: 10.416666666666666vw;
+        aspect-ratio: 1/1;
+        height: auto; 
+        transform-style: preserve-3d;
+        animation: spin 20s linear infinite;
+    }
+    .box .cube div{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+    }
+    .box .cube div span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(var(--second_color), var(--second_color), var(--main_color) );
+        transform: rotateY(calc(90deg * var(--i))) translateZ(5.208333333333333vw);
+    }
+    .box .cube .top{
+        background: var(--main_color);
+        transform: rotateX(90deg) translateZ(calc(10.416666666666666vw / 2));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .box .cube .top::before{
+        content: '';
+        position: absolute;
+        width: calc(10.416666666666666vw * 2);
+        height: auto;
+        aspect-ratio: 1/1;
+        background: var(--second_color);
+        box-shadow: var(--boxshadow);
+        filter: blur(50px);
+        transform: translateZ(calc(-10.416666666666666vw * 2));
+    }
+
+
+    
+    @keyframes spin{
+        0%{
+            transform: rotateY(0deg);
+        }
+        100%{
+            transform: rotateY(360deg);
+        }
+    }
+
+
+    .control {
+        max-width: 25vw;
+        width: max-content;
+        height: max-content;
+        background: #fff;
+        border-radius: 10px;
+        bottom: 35px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        border: 5px solid #565656;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.3020833333333333vw;
+    }
+
+    .control span {
+        width: 2.6041666666666665vw;
+        aspect-ratio: 1/1;
+        height: auto;
+        position: relative;
+        border-radius: 0.4166666666666667vw;
+        margin: 0 0.2604166666666667vw;
+        cursor: pointer;
+        transition: 400ms;
+    }
+
+
+    span#red {
+        background: #ff0000;
+        border: 3px solid #ff9191;
+    }
+    span#red:hover{
+        background: #ff9191;
+    }
+    span#blue {
+        background: #0000ff;
+        border: 3px solid #8484ff;
+    }
+    span#blue:hover{
+        background: #8484ff;
+    }
+    span#pink {
+        background: #9c27b0;
+        border: 3px solid #ed81ff;
+    }
+    span#pink:hover{
+        background: #ed81ff;
+    }
+    span#orange {
+        background: #f85f01;
+        border: 3px solid #ffb080;
+    }
+    span#orange:hover{
+        background: #ffb080;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+
+    <section>
+        <div class="box">
+            <div class="cube">
+                <div class="top"></div>
+                <div>
+                    <span style="--i:0;"></span>
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="control">
+            <span class="color" id="red"   ></span>
+            <span class="color" id="blue"  ></span>
+            <span class="color" id="pink"  ></span>
+            <span class="color" id="orange"></span>
+        </div>
+    </section>
+    
+
+</body>
+
+<script>
+
+    let colors  = document.querySelectorAll('.control span');
+    let body    = document.getElementsByName('body');
+
+    colors.forEach(element => {
+        element.addEventListener('click', () => {
+
+            var color = element.id;
+
+            document.body.classList.remove('red','blue','pink','orange');
+            document.body.classList.add(color);
+
+        });
+    });
+
+    
+
+
+
+
+</script>
+
+
+
+</html>
