@@ -10,9 +10,10 @@ export function Effects(){
         </div>
 
         <div className="Effects_cards">
-
-            <iframe src="Effects\3dcards.html"></iframe>
-
+            <iframe src="Effects\3DBox\3dbox.html"></iframe>
+        </div>
+        <div className="Effects_cards">
+            <iframe src="Effects\Calc\calculadora.html"></iframe>
         </div>
 
     </section>

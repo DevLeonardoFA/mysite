@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       
-      <NavMenu />
+      {/* <NavMenu /> */}
 
       <Redes />
 
