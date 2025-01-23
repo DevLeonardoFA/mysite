@@ -3,30 +3,30 @@ import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { parentPort, threadId } from 'node:worker_threads';
-import { getRequestHeader, splitCookiesString, setResponseStatus, setResponseHeader, send, getRequestHeaders, defineEventHandler, handleCacheHeaders, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, setResponseHeaders, createError, getRouterParam, getQuery as getQuery$1, readBody, getResponseStatusText } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/h3/dist/index.mjs';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/devalue/index.js';
-import destr from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/destr/dist/index.mjs';
-import { withQuery, joinURL, withTrailingSlash, parseURL, withoutBase, getQuery, joinRelativeURL } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/vue/server-renderer/index.mjs';
-import { propsToString, renderSSRHead } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/@unhead/ssr/dist/index.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/unhead/dist/index.mjs';
-import { klona } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/scule/dist/index.mjs';
-import { createHooks } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/hookable/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/unenv/runtime/fetch/index.mjs';
+import { getRequestHeader, splitCookiesString, setResponseStatus, setResponseHeader, send, getRequestHeaders, defineEventHandler, handleCacheHeaders, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, setResponseHeaders, createError, getRouterParam, getQuery as getQuery$1, readBody, getResponseStatusText } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/h3/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/devalue/index.js';
+import destr from 'file://C:/Users/Leo/Desktop/mysite/node_modules/destr/dist/index.mjs';
+import { withQuery, joinURL, withTrailingSlash, parseURL, withoutBase, getQuery, joinRelativeURL } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/vue/server-renderer/index.mjs';
+import { propsToString, renderSSRHead } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/@unhead/ssr/dist/index.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/unhead/dist/index.mjs';
+import { klona } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/scule/dist/index.mjs';
+import { createHooks } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/hookable/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/unenv/runtime/fetch/index.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { consola } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/consola/dist/index.mjs';
-import { getContext } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/errx/dist/index.js';
-import { isVNode, version, unref } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/vue/index.mjs';
-import { hash } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/radix3/dist/index.mjs';
-import { defineHeadPlugin } from 'file://C:/Users/Leo/Desktop/Portifolio%20nuxt/node_modules/@unhead/shared/dist/index.mjs';
+import { consola } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/consola/dist/index.mjs';
+import { getContext } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/errx/dist/index.js';
+import { isVNode, version, unref } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/vue/index.mjs';
+import { hash } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/ohash/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/Leo/Desktop/mysite/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/radix3/dist/index.mjs';
+import { defineHeadPlugin } from 'file://C:/Users/Leo/Desktop/mysite/node_modules/@unhead/shared/dist/index.mjs';
 
 function hasReqHeader(event, name, includes) {
   const value = getRequestHeader(event, name);
@@ -172,13 +172,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _S95ptgEkHn = (function(nitro) {
+const _5iEy8uE0sz = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "C:/Users/Leo/Desktop/Portifolio nuxt";
+const rootDir = "C:/Users/Leo/Desktop/mysite";
 
 const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My Portifolio"},{"name":"format-detection","content":"telephone=no"}],"link":[],"style":[],"script":[],"noscript":[],"title":"Leonardo F. Alonso | Portifolio"};
 
@@ -197,7 +197,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : undefined
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _55aMz2YaLL = (nitroApp) => {
+const _ilXY7bJOVq = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -267,18 +267,18 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _S95ptgEkHn,
-_55aMz2YaLL
+  _5iEy8uE0sz,
+_ilXY7bJOVq
 ];
 
-const _lazy_fZP68a = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_d5I3q6 = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_fZP68a, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_fZP68a, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_d5I3q6, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_d5I3q6, lazy: true, middleware: false, method: undefined }
 ];
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/Leo/Desktop/Portifolio nuxt/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/Leo/Desktop/mysite/server/assets"}];
 
 const assets = createStorage();
 
@@ -290,11 +290,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Leo\\Desktop\\Portifolio nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Leo\\Desktop\\Portifolio nuxt\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Leo\\Desktop\\Portifolio nuxt\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Leo\\Desktop\\Portifolio nuxt\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Leo\\Desktop\\Portifolio nuxt\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Leo\\Desktop\\mysite","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Leo\\Desktop\\mysite\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Leo\\Desktop\\mysite\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Leo\\Desktop\\mysite\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Leo\\Desktop\\mysite\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1163,8 +1163,8 @@ function publicAssetsURL(...path) {
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file://C:/Users/Leo/Desktop/Portifolio%20nuxt/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file://C:/Users/Leo/Desktop/Portifolio%20nuxt/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://C:/Users/Leo/Desktop/mysite/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://C:/Users/Leo/Desktop/mysite/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
