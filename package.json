@@ -1,28 +1,25 @@
 {
-  "name": "mysite",
+  "name": "nuxt-app",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build ",
-    "preview": "vite preview"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scroll": "^1.8.7",
-    "react-slick": "^0.29.0",
-    "slick-carousel": "^1.8.1"
+    "@hypernym/nuxt-gsap": "^2.4.3",
+    "gsap": "^3.12.7",
+    "lenis": "^1.1.20",
+    "nuxt": "^3.15.2",
+    "nuxt-gsap-module": "^2.0.0",
+    "vue": "latest",
+    "vue-router": "latest"
   },
   "devDependencies": {
-    "@types/node": "^18.7.13",
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@types/react-scroll": "^1.8.4",
-    "@types/react-slick": "^0.23.10",
-    "@vitejs/plugin-react": "^2.0.1",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.7"
+    "nuxt-aos": "^1.2.5",
+    "sass-embedded": "^1.83.4"
   }
 }
