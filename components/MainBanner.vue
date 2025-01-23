@@ -9,7 +9,7 @@
                     Tip: Throwing your computer against the wall, oddly enough, doesn't help fix bugs.
                 </span>
                 
-                <div class="content_redes">
+                <div class="content_redes" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2200">
                     <div class="redes">
 
                         <div class="item menu_item">
