@@ -102,10 +102,10 @@
                 "description": "",
                 "url": "https://www.himaflex.com.br/",
                 "image": "Himaflex.png",
-                "developed": "Project developed at RetinaWeb",
+                "developed": "Project developed at",
                 "at": {
-                    "companyname": "Steves&Co",
-                    "companyurl": "https://stevesandco.com/"
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
                 },
                 "background": "#ffffff"
             },
@@ -114,10 +114,10 @@
                 "description": "",
                 "url": "https://www.bfequipamentos.com.br/",
                 "image": "BF.webp",
-                "developed": "Project developed at RetinaWeb",
+                "developed": "Project developed at",
                 "at": {
-                    "companyname": "Steves&Co",
-                    "companyurl": "https://stevesandco.com/"
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
                 },
                 "background": "#000000"
             },
@@ -126,10 +126,10 @@
                 "description": "",
                 "url": "https://imperiomotors.com.br/",
                 "image": "ImperioMotors.webp",
-                "developed": "Project developed at RetinaWeb",
+                "developed": "Project developed at",
                 "at": {
-                    "companyname": "Steves&Co",
-                    "companyurl": "https://stevesandco.com/"
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
                 },
                 "background": "#000000"
             },
@@ -138,15 +138,50 @@
                 "description": "",
                 "url": "https://www.liandretta.com.br/",
                 "image": "LiAndretta.png",
-                "developed": "Project developed at RetinaWeb",
+                "developed": "Project developed at",
                 "at": {
-                    "companyname": "Steves&Co",
-                    "companyurl": "https://stevesandco.com/"
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
                 },
                 "background": "#FAEAF3"
+            },
+            {
+                "name": "RetinaWeb",
+                "description": "",
+                "url": "https://www.retinaweb.com.br/",
+                "image": "RetinaWeb.png",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#ffffff"
+            },
+            {
+                "name": "JG Lab",
+                "description": "",
+                "url": "https://jglab.com.br/",
+                "image": "JGLab.webp",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#ffffff"
+            },
+            {
+                "name": "Pinheiro de Morais",
+                "description": "",
+                "url": "https://pinheirodemorais.com.br/",
+                "image": "PinheirodeMoraes.webp",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#1d1d1b"
+                
             }
-    
-    
         ]
     }
 ]
