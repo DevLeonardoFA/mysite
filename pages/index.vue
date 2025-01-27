@@ -1,9 +1,9 @@
 <template>
-    
+
     <div class="home">
-        <MainBanner />
+        <!-- <MainBanner />
         <About />
-        <Projetos />
+        <Projetos /> -->
     </div>
 
 </template>
@@ -14,6 +14,4 @@
 
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
