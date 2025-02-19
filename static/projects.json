@@ -180,7 +180,126 @@
                     "companyurl": "https://retinaweb.com.br/"
                 },
                 "background": "#1d1d1b"
-                
+            },
+            {
+                "name": "Vizuri",
+                "description": "",
+                "url": "https://vizuri.com.br/",
+                "image": "Vizuri.webp",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#552e66"
+            },
+            {
+                "name": "TGL Expertise",
+                "description": "",
+                "url": "https://tglexpertise.com.br/",
+                "image": "TGL.png",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#ffffff"
+            },
+            {
+                "name": "Sabbia",
+                "description": "",
+                "url": "https://sabbia.com.br/",
+                "image": "Sabbia.png",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#ffffff"
+            },
+            {
+                "name": "JOIN Arquitetos",
+                "description": "",
+                "url": "https://joinarquitetos.com/",
+                "image": "Join.webp",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#ffffff"
+            },
+            {
+                "name": "Brazil TC (pt-br)",
+                "description": "",
+                "url": "https://braziltc.com.br/",
+                "image": "Btc.png",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#ffffff"
+            },
+            {
+                "name": "Brazil TC (en)",
+                "description": "",
+                "url": "https://braziltc.com/",
+                "image": "Btc.png",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#ffffff"
+            },
+            {
+                "name": "Grupo VRV",
+                "description": "",
+                "url": "https://www.grupovrv.com.br/",
+                "image": "VRV.png",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },  
+                "background": "#ffffff"
+            },
+            {
+                "name": "Antonio Queiroz",
+                "description": "",
+                "url": "https://drantonioqueiroz.com.br/",
+                "image": "AntonioQueiroz.webp",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#ffffff"
+            },
+            {
+                "name": "Original King",
+                "description": "",
+                "url": "https://originalking.com.br/",
+                "image": "OKing.png",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#26408b"
+            },
+            {
+                "name": "Terra Mel",
+                "description": "",
+                "url": "https://terramel.com.br/",
+                "image": "TerraMel.png",
+                "developed": "Project developed at",
+                "at": {
+                    "companyname": "RetinaWeb",
+                    "companyurl": "https://retinaweb.com.br/"
+                },
+                "background": "#ffffff"
             }
         ]
     }
