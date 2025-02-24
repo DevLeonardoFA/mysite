@@ -9,40 +9,42 @@
 <script setup>
 
   import { gsap } from 'gsap';
-  import ScrollTrigger from 'gsap/ScrollTrigger'; // Import ScrollTrigger
 
-  gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger
-    nextTick(() => { // Ensure SVG is rendered
-      let svg = document.querySelector('svg');
-      let path = svg?.querySelector('path');
 
-      if (svg && path) { // Check if both elements exist
-        const pathLength = path.getTotalLength();
+  onMounted(() => {
 
-        gsap.set(path, {
-          strokeDasharray: pathLength, // Set strokeDasharray to pathLength
-          strokeDashoffset: pathLength, // Initialize with offset
-        });
+    let svg = document.querySelector('svg');
+    let path = svg?.querySelector('path');
 
-        gsap.fromTo(
-          path,
-          { strokeDashoffset: pathLength },
-          {
-            strokeDashoffset: 0,
-            ease: "none",
-            scrollTrigger: {
-              trigger: svg,
-              start: "top top",
-              end: "bottom bottom",
-              scrub: 1,
-              markers: true, // Uncomment for debugging ScrollTrigger
-            },
-          }
-        );
-      } else {
-        console.error("SVG or path element not found!");
-      }
-    });
+    if (svg && path) { // Check if both elements exist
+      const pathLength = path.getTotalLength();
+
+      gsap.set(path, {
+        strokeDasharray: pathLength, // Set strokeDasharray to pathLength
+        strokeDashoffset: pathLength, // Initialize with offset
+      });
+
+      gsap.fromTo(
+        path,
+        { strokeDashoffset: pathLength },
+        {
+          strokeDashoffset: 0,
+          ease: "none",
+          scrollTrigger: {
+            trigger: svg,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 1,
+            markers: true, // Uncomment for debugging ScrollTrigger
+          },
+        }
+      );
+    } else {
+      console.error("SVG or path element not found!");
+    }
+
+  });
+      
 
 
 
