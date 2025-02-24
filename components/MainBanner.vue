@@ -57,7 +57,7 @@
         height: 100vh;
         min-height: 60vh;
         z-index: 2;
-        position: relative;_
+        position: relative;
     
         .container{
             display: flex;
