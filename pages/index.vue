@@ -1,6 +1,7 @@
 <template>
 
     <div class="home">
+        <Line />
         <MainBanner />
         <About />
         <Projetos />
@@ -14,4 +15,10 @@
 
 </script>
 
-<style scoped></style>
+<style scoped>
+
+    .home{
+        position: relative;
+    }
+
+</style>

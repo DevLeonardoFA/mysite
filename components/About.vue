@@ -31,6 +31,8 @@
 
     .about{
         min-height: 60vh;
+        z-index: 2;
+        position: relative;
     
         .container{
             width: 90%;

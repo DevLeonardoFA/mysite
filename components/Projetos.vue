@@ -38,6 +38,8 @@
 
     .projects_section{
         padding: 5rem 0;
+        z-index: 2;
+        position: relative;
 
         h2{
             color: #fff;
