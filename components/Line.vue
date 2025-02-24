@@ -1,50 +1,53 @@
 <template>
   <div class="container-line">
-    <svg xmlns="http://www.w3.org/2000/svg" width="1627" height="3004" viewBox="0 0 1627 3004" fill="none" class="svg">
-      <path d="M755 4.5C530.246 57.6906 527.092 327.346 769.5 461.5C1011.91 595.654 738.5 1200 1348 757C1957.5 314 301.353 619.353 107.5 1081C-136.131 1661.19 2030.92 1383.64 1553 1793C1429.51 1898.78 1338.44 1938.47 1181.5 1981C776.324 2090.8 416.694 1354.31 150 1678.5C-14.2322 1878.14 655 2626 93 2338C-469 2050 1851.43 1983.75 1531.5 2447.5C1344.84 2718.06 764.805 2476.33 769.5 2805C770.633 2884.32 817 3002.5 817 3002.5" stroke="#69A9DD" stroke-width="8"/>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="1644" height="3037" viewBox="0 0 1644 3037" fill="none">
+      <path d="M831 0.5C831 176.5 146 179.5 146 510.5C146 841.5 896 1381.5 1505.5 938.5C2115 495.5 458.853 800.853 265 1262.5C21.3694 1842.69 1983.1 1416.14 1505.19 1825.5C1381.7 1931.28 1312.44 2217.97 1155.5 2260.5C750.324 2370.3 390.693 1633.81 124 1958C-40.2323 2157.64 654.5 2549 92.5001 2261C-469.5 1973 1850.93 1906.75 1531 2370.5C1344.34 2641.06 716.993 2508.83 721.688 2837.5C722.821 2916.82 769.188 3035 769.188 3035" stroke="#69A9DD" stroke-width="8"/>
     </svg>
+    
   </div>
 </template>
 
 <script setup>
 
   import { gsap } from 'gsap';
+  import ScrollTrigger from 'gsap/ScrollTrigger'; // Import ScrollTrigger
 
+  gsap.registerPlugin(ScrollTrigger); // Register ScrollTrigger
 
   onMounted(() => {
+    nextTick(() => { // Ensure SVG is rendered
+      let svg = document.querySelector('svg');
+      let path = svg?.querySelector('path');
 
-    let svg = document.querySelector('svg');
-    let path = svg?.querySelector('path');
+      if (svg && path) { // Check if both elements exist
+        const pathLength = path.getTotalLength();
 
-    if (svg && path) { // Check if both elements exist
-      const pathLength = path.getTotalLength();
+        gsap.set(path, {
+          strokeDasharray: pathLength, // Set strokeDasharray to pathLength
+          strokeDashoffset: pathLength, // Initialize with offset
+        });
 
-      gsap.set(path, {
-        strokeDasharray: pathLength, // Set strokeDasharray to pathLength
-        strokeDashoffset: pathLength, // Initialize with offset
-      });
-
-      gsap.fromTo(
-        path,
-        { strokeDashoffset: pathLength },
-        {
-          strokeDashoffset: 0,
-          ease: "none",
-          scrollTrigger: {
-            trigger: svg,
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 1,
-            markers: true, // Uncomment for debugging ScrollTrigger
-          },
-        }
-      );
-    } else {
-      console.error("SVG or path element not found!");
-    }
-
+        gsap.fromTo(
+          path,
+          { strokeDashoffset: pathLength },
+          {
+            strokeDashoffset: 0,
+            ease: "none",
+            scrollTrigger: {
+              trigger: svg,
+              start: "top top",
+              end: "bottom bottom",
+              scrub: 1,
+              markers: true, // Uncomment for debugging ScrollTrigger
+            },
+          }
+        );
+      } else {
+        console.error("SVG or path element not found!");
+      }
+    });
   });
-      
 
 
 
@@ -62,6 +65,7 @@
     width: 100%;
     height: 3000px;
     z-index: 1;
+    transform: translateY(-15px);
   }
 
 </style>
