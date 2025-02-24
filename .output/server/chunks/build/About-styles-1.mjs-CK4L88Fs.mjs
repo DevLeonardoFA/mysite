@@ -1,4 +1,0 @@
-const About_vue_vue_type_style_index_0_scoped_b4bdeae1_lang = ".about[data-v-b4bdeae1]{min-height:60vh;position:relative;z-index:2}.about .container[data-v-b4bdeae1]{align-items:center;display:flex;margin:0 auto;max-width:1200px;padding:4rem 0;width:90%}.about .container h2[data-v-b4bdeae1]{color:#fff;font-size:1.5rem;font-weight:600;margin-bottom:1rem}.about .container h2 span[data-v-b4bdeae1]{display:block}.about .container p[data-v-b4bdeae1]{color:#fff;font-size:.9rem;font-weight:600;line-height:1.5;margin-bottom:1.3rem}@media screen and (min-width:768px){.about .container[data-v-b4bdeae1]{padding:7rem 0}.about .container h2[data-v-b4bdeae1]{font-size:3rem}.about .container h2 span[data-v-b4bdeae1]{display:inline-block}.about .container p[data-v-b4bdeae1]{font-size:1.5rem;max-width:1000px}}";
-
-export { About_vue_vue_type_style_index_0_scoped_b4bdeae1_lang as A };
-//# sourceMappingURL=About-styles-1.mjs-CK4L88Fs.mjs.map
