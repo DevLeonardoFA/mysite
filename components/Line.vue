@@ -93,7 +93,8 @@
       height: max-content;
 
       path{
-        stroke: #69A9DD ;
+        /* stroke: #69A9DD ; */
+        stroke: #977fff70;
         stroke-width: 8;
       }
 

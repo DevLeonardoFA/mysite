@@ -18,6 +18,9 @@
         </p>
 
       </div>
+      <div class="meinpixel">
+        <img src="/me_in_pixel.png" alt="me in pixel" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">
+      </div>
     </div>
   </div>
 
@@ -41,8 +44,13 @@
             display: flex;
             align-items: center;
             padding: 4rem 0;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            
 
-            h2{
+            .text{
+              h2{
                 color: #fff;
                 font-size: 1.5rem;
                 font-weight: 600;
@@ -50,14 +58,25 @@
                 span{
                     display: block;
                 }
+              }
+          
+              p{
+                  color: #fff;
+                  font-size: 0.9rem;
+                  font-weight: 600;
+                  margin-bottom: 1.3rem;
+                  line-height: 1.5;
+              }
             }
-        
-            p{
-                color: #fff;
-                font-size: 0.9rem;
-                font-weight: 600;
-                margin-bottom: 1.3rem;
-                line-height: 1.5;
+
+            .meinpixel{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              img{
+                max-width: 250px;
+                width: 100%;
+              }
             }
 
         }
@@ -71,6 +90,9 @@
         .about{
             .container{
               padding: 7rem 0;
+              grid-template-columns: repeat(2, 1fr);
+
+              .text{
                 h2{
                     font-size: 3rem;
                     span{
@@ -82,6 +104,13 @@
                   max-width: 1000px;
                   font-size: 1.5rem;
                 }
+              }
+
+              .meinpixel{
+                img{
+                  max-width: 500px;
+                }
+              }
                 
             }
         }
