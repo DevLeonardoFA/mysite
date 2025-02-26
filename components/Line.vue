@@ -57,7 +57,7 @@
           ease: "none",
           scrollTrigger: {
             trigger: svg,
-            start: "top top",
+            start: "top 25px",
             end: "bottom bottom",
             scrub: 1,
           },
@@ -85,6 +85,12 @@
 
     svg{
       margin: 0 auto;
+      display: block;
+      width: 100%;
+      overflow-clip-margin: unset;
+      overflow: unset;
+      fill: none;
+      height: max-content;
 
       path{
         stroke: #69A9DD ;
