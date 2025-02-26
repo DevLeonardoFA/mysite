@@ -6,18 +6,24 @@
             <h2>Projects</h2>
             <div class="projects">
                 <div class="project" v-for="(project, index) in projects[0].projects" :key="index" data-aos="fade-up" :data-aos-duration="1500" :data-aos-delay="500">
-                    <a :href="project.url" target="_blank" rel="noopener noreferrer">
+                    
                         <div class="project_int">
-                            <div class="img_section" :style="`background-color: ${project.background}`" >
-                                <img :src="project.image" :alt="project.name">
-                            </div>
+                            <a :href="project.url" target="_blank" rel="noopener noreferrer">
+                                <div class="img_section" :style="`background-color: ${project.background}`" >
+                                    <span>
+                                        <img :src="project.image" :alt="project.name">
+                                    </span>
+                                </div>
+                            </a>
                             <div class="content">
-                                <p>{{ project.name }}</p>
-                                <p>{{ project.description }}</p>
-                                <p>{{ project.developed }} <a :href="project.at.companyurl" target="_blank" rel="noopener noreferrer" class="company">{{ project.at.companyname }}</a></p>
+                                <p v-html="project.name"></p>
+                                <p v-html="project.description"></p>
+                                <div class="developed">
+                                    <span v-html="project.developed"></span>
+                                    <a :href="project.at.companyurl" target="_blank" rel="noopener noreferrer" class="company" v-html="project.at.companyname"></a>
+                                </div>
                             </div>
                         </div>
-                    </a>
                 </div>
 
 
@@ -59,6 +65,7 @@
                 box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
                 border: 1px solid rgba(0, 0, 0, 0.1);
                 text-align: center;
+                background: #222;
 
                 a{
                     text-decoration: none;
@@ -80,19 +87,32 @@
                             margin: 0 auto;
                         }
                     }
+                }
 
-                    .content{
-                        padding: 0 15px 5px;
-                        margin-top: 20px;
-                        
-                        p{
-                            margin: 0.5rem 0;
-                        }
+                
 
-                        .company{
-                            color: #fff;
-                            font-weight: 800;
-                        }
+                .content{
+                    padding: 0 15px 5px;
+                    margin-top: 20px;
+                    
+                    p, span{
+                        color: #fff;
+                        font-weight: 600;
+                        margin: 0.5rem 0;
+                        line-height: 1.2;
+                        display: block;
+                    }
+
+                    .developed{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .company{
+                        margin-left: 5px;
+                        color: #fff;
+                        font-weight: 800;
                     }
                 }
 

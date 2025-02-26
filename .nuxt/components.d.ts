@@ -4,6 +4,7 @@ type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refre
 interface _GlobalComponents {
       'About': typeof import("../components/About.vue")['default']
     'Line': typeof import("../components/Line.vue")['default']
+    'LoadScreen': typeof import("../components/LoadScreen.vue")['default']
     'MainBanner': typeof import("../components/MainBanner.vue")['default']
     'Projetos': typeof import("../components/Projetos.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
@@ -31,6 +32,7 @@ interface _GlobalComponents {
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyAbout': typeof import("../components/About.vue")['default']
     'LazyLine': typeof import("../components/Line.vue")['default']
+    'LazyLoadScreen': typeof import("../components/LoadScreen.vue")['default']
     'LazyMainBanner': typeof import("../components/MainBanner.vue")['default']
     'LazyProjetos': typeof import("../components/Projetos.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
@@ -64,6 +66,7 @@ declare module 'vue' {
 
 export const About: typeof import("../components/About.vue")['default']
 export const Line: typeof import("../components/Line.vue")['default']
+export const LoadScreen: typeof import("../components/LoadScreen.vue")['default']
 export const MainBanner: typeof import("../components/MainBanner.vue")['default']
 export const Projetos: typeof import("../components/Projetos.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
@@ -91,6 +94,7 @@ export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyAbout: typeof import("../components/About.vue")['default']
 export const LazyLine: typeof import("../components/Line.vue")['default']
+export const LazyLoadScreen: typeof import("../components/LoadScreen.vue")['default']
 export const LazyMainBanner: typeof import("../components/MainBanner.vue")['default']
 export const LazyProjetos: typeof import("../components/Projetos.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
