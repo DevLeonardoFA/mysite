@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Web Developer",
+        "company": "Steves&Co",
+        "companyurl": "https://stevesandco.com/",
+        "companylogo": "",
+        "from": "2023",
+        "to": "2025",
+        "country": "Malta",
+        "description": "Build websites based on client needs, always trying to keep things clean, efficient, and easy to maintain. <br><br> Built some tools for the team to speed up the dev process, nothing fancy, but they saved us time and made things more consistent. <br><br> Took part in organizing how we do things internally — documenting, improving workflows, and making sure our work wouldn’t break when passed between devs."
+    },
+    {
+        "title": "Customer Service Agent",
+        "company": "GCC7",
+        "companyurl": "#",
+        "companylogo": "",
+        "from": "2022",
+        "to": "2023",
+        "country": "Malta",
+        "description": "Establish daily communication with clients to resolve issues and provide updates on their investments."
+    },
+    {
+        "title": "Full Stack Developer",
+        "company": "RetinaWeb",
+        "companyurl": "https://retinaweb.com.br/",
+        "companylogo": "",
+        "from": "2019",
+        "to": "2022",
+        "country": "Brazil",
+        "description": "I worked remotely on all types of projects — landing pages, woocommerce, and multi-page websites. <br><br> Meetings with clients to understand their needs and present some options and ideas for the project.<br><br> I also helped train new developers, explaining methodologies, languages, architecture models, and experiences with clients, all to help with the development of new team members."
+    }
+]

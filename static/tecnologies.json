@@ -1,0 +1,31 @@
+[
+    {
+        "tecnologies": [
+            {
+                "name": "Wordpress",
+                "years": 7
+            },
+            {
+                "name": "HTML/CSS/JS",
+                "years": 7
+            },
+            {
+                "name": "SCSS",
+                "years": 7
+            },
+            {
+                "name": "PHP",
+                "years": 7
+            },
+            {
+                "name": "Vue.js",
+                "years": 2
+            },
+            {
+                "name": "React.js",
+                "years": 2
+            }
+        ]
+    }
+    
+]

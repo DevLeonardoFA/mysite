@@ -6,8 +6,6 @@
             <h2>Projects</h2>
             <div class="projects">
 
-                
-
                 <Card 
                 v-for="(project, index) in projects[0].projects" 
                 :key="index" data-aos="fade-up" 
