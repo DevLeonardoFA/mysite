@@ -6,7 +6,7 @@
         "yearStart": "2017",
         "yearEnd": "2022",
         "description": "Studied software development, databases, project planning, and how to build useful systems. It was a solid mix of theory and hands-on work, and it gave me a good base for everything I’ve done since. ",
-        "extra-activity": [
+        "extraActivity": [
             {
                 "activity": "Open doors at Fatec",
                 "description": "Presentation of the Systems Analysis and Development Course at a college event to encourage people to study and earn a degree."
@@ -21,18 +21,10 @@
         "school": "ETEC Polivalente Americana",
         "course": "Technical Course in Systems Development",
         "country": "Brazil",
-        "year-start": "2015",
-        "year-end": "2016",
+        "yearStart": "2015",
+        "yearEnd": "2016",
         "description": "This was my first step into tech. Learned basic programming and how to think like a developer. Nothing too advanced, but it sparked my interest and made me want more. ",
-        "extra-activity": [
-            {
-                "activity": "Open doors at Fatec",
-                "description": "Presentation of the Systems Analysis and Development Course at a college event to encourage people to study and earn a degree."
-            },
-            {
-                "activity": "Auxiliary classes",
-                "description": "A group of friends and I decided to help some students with difficulty with Object-Oriented Programming (OOP)."
-            }
+        "extraActivity": [
         ]
     }
 ]

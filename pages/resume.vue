@@ -90,8 +90,8 @@
                         <h4>{{education.yearStart}} - {{education.yearEnd}} | {{education.country}}</h4>
                         <p v-html="education.description"></p>
                     
-                        <ul>
-                            <li v-for="(activity, index) in education.extra_activity" :key="index">
+                        <ul class="extra-activity">
+                            <li v-for="(activity, index) in education.extraActivity" :key="index">
                                 <h4>{{activity.activity}}</h4>
                                 <p v-html="activity.description"></p>
                             </li>
@@ -234,6 +234,14 @@
                         height: 100%;
                         background-color: #fff;
                     }
+
+                    .extra-activity{
+                        padding: 1rem 0rem 1rem 3rem;
+                        list-style-type: disc;
+                        color: #fff;
+                        font-size: 1rem;
+                    }
+
                 }
 
             }
