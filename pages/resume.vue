@@ -272,6 +272,7 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-gap: 2rem;
+                overflow: hidden;
 
                 h2{
                     color: #fff;
