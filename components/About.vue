@@ -7,7 +7,8 @@
         <h2 data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500">About Me</h2>
         <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1200">
 
-          I'm Leo, a web developer from Brazil.
+          👋 Hello! I'm Leo. 👋
+          <br><br>
           With 26 Years old and a bachelor's degree, 
           I've been working in the IT area since 2018.
           <br><br>
@@ -18,6 +19,7 @@
           Also with great attention to details and always loking for
           ways to improve my work and deliver the best possible
           results.
+
         </p>
 
       </div>

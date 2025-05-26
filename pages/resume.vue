@@ -6,7 +6,9 @@
 
             <!-- back button -->
             <NuxtLink to="/" class="back-button">
-                <FontAwesomeIcon :icon="faArrowLeft" />
+                <!-- add arrow font awesome -->
+                <font-awesome-icon icon="fa-solid fa-arrow-left" />
+                Back to Home
             </NuxtLink>
 
             <div class="head">
@@ -18,9 +20,33 @@
                     <h2 class="role">
                         Web Developer
                     </h2>
+                    <a href="mailto:devleonardofernandes@gmail.com">
+                        devleonardofernandes@gmail.com
+                    </a>
+                    <a href="tel:+35677509674">+356 77 509 674</a>
+                    <a href="https://www.linkedin.com/in/leonardo-f-alonso/" target="_blank" 
+                    rel="noopener noreferrer">linkedin.com/in/leonardo-f-alonso/</a>
+                    
+
                 </div>
 
-                <div class="tecnologies">
+                <div class="languages">
+                    <h2>Languages</h2>
+                    <div class="lang">
+                        <h3>Portuguese</h3>
+                        <small>C2 - Mother Language</small>
+                    </div>
+                    <div class="lang">
+                        <h3>English</h3>
+                        <small>B2/C1 - Advanced</small>
+                    </div>
+                    <div class="lang">
+                        <h3>Italian</h3>
+                        <small>B2 - Basic (learning)</small>
+                    </div>
+                </div>
+
+                <!-- <div class="tecnologies">
                     
                     <table class="tecnologies-table" border="1">
                         <tr>
@@ -50,7 +76,7 @@
 
                     </table>
 
-                </div>
+                </div> -->
 
             </div>
 
@@ -102,13 +128,14 @@
 
                 </div>
 
-
-
             </div>
 
 
-
         </div>
+
+        
+
+        <Projetos />
 
 
     </div>
@@ -118,7 +145,6 @@
 <script setup lang="ts">
 
     // import font awesome
-    import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
     import tecnologies from '~/static/tecnologies.json';
@@ -142,21 +168,16 @@
             padding-top: 50px;
 
             .back-button{
-                font-size: 2rem;
+                font-size: 1.4rem;
                 color: #fff;
                 text-decoration: none;
             }
 
             .head{
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
                 grid-gap: 2rem;
-                h1{
-                    color: #fff;
-                    font-size: 3rem;
-                    font-weight: 600;
-                    margin-bottom: 0.4rem;
-                }
+
                 h2{
                     color: #fff;
                     font-size: 1.6rem;
@@ -164,7 +185,56 @@
                     margin-bottom: 1rem;
                 }
 
-                
+                .infobase{
+                    h1{
+                        color: #fff;
+                        font-size: 3rem;
+                        font-weight: 600;
+                        margin-bottom: 0.4rem;
+                    }
+                }
+
+                .languages{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: 50px 35px auto;
+                    grid-gap: 0rem;
+                    margin-bottom: 1rem;
+
+                    h2{
+                        grid-column: 1 / span 3; 
+                    }
+
+                    .lang{
+                        grid-row: 2;
+
+                        h3{
+                            color: #fff;
+                            font-size: 1.3rem;
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                        }
+
+                        small{
+                            display: block;
+                            color: #fff;
+                            font-size: 0.8rem;
+                            font-weight: 600;
+                            grid-row: 3;
+                        }
+                    }
+
+                    
+                    
+                    span{
+                        display: block;
+                        color: #fff;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        margin-bottom: 0.4rem;
+                    }
+                }
+
                 table{
                     color: #fff;
                     font-size: 1rem;
@@ -185,11 +255,22 @@
                         }
                     }
                 }
+
+                a{
+                    display: block;
+                    color: #fff;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin-bottom: 0.2rem;
+                    line-height: 1.5;
+                    text-decoration: none;
+                    width: max-content;
+                }
             }
 
             .resume-content{
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
                 grid-gap: 2rem;
 
                 h2{
@@ -249,6 +330,21 @@
 
         }
 
+    }
+
+    @media screen and (min-width: 1199px) {
+        
+        .resume{
+            .container{
+                .head{
+                    grid-template-columns: 1fr 1fr;
+                }
+                .resume-content{
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+        
     }
 
 </style>
