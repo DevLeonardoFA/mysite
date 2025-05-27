@@ -54,14 +54,17 @@
             margin: 0 auto;
             display: flex;
             align-items: center;
-            padding: 4rem 0;
+            padding: 4rem 2rem;
             display: grid;
             align-content: center;
             justify-content: center;
             background: #554b83;  
-            
+            border-radius: 5px;
 
             .text{
+              text-align: center;
+              width: 400px;
+
               h2{
                 color: #fff;
                 font-size: 1.5rem;
@@ -106,7 +109,7 @@
             .buttons{
               display: flex;
               align-items: center;
-              justify-content: start;
+              justify-content: center;
               margin-top: 2rem;
 
               .resume-button{
@@ -134,7 +137,7 @@
 
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 991px) {
         
         .about{
             .container{
@@ -143,6 +146,8 @@
               border-radius: 50px;
 
               .text{
+                text-align: left;
+
                 h2{
                     font-size: 3rem;
                     span{
@@ -154,6 +159,10 @@
                   max-width: 1000px;
                   font-size: 1.5rem;
                 }
+              }
+
+              .buttons{
+                justify-content: flex-start;
               }
 
               .meinpixel{

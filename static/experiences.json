@@ -7,7 +7,7 @@
         "from": "2023",
         "to": "2025",
         "country": "Malta",
-        "description": "Build websites based on client needs, always trying to keep things clean, efficient, and easy to maintain. <br><br> Built some tools for the team to speed up the dev process, nothing fancy, but they saved us time and made things more consistent. <br><br> Took part in organizing how we do things internally — documenting, improving workflows, and making sure our work wouldn’t break when passed between devs."
+        "description": "I created websites based on client needs, always keeping our designs clean, efficient and easy to maintain. <br><br> I created tools to help the development process, which saved us time and made projects more consistent. <br><br> I participated in organizing how we do documentation and development processes — documenting, improving workflows and ensuring that our work was easy to maintain for other developers."
     },
     {
         "title": "Customer Service Agent",
@@ -28,5 +28,15 @@
         "to": "2022",
         "country": "Brazil",
         "description": "I worked remotely on all types of projects — landing pages, woocommerce, and multi-page websites. <br><br> Meetings with clients to understand their needs and present some options and ideas for the project.<br><br> I also helped train new developers, explaining methodologies, languages, architecture models, and experiences with clients, all to help with the development of new team members."
+    },
+    {
+        "title": "Web Developer Internship",
+        "company": " Viaativa Soluções Web (Viaativa Web Solutions)",
+        "companyurl": "https://viaativa.com.br/",
+        "companylogo": "",
+        "from": "2018",
+        "to": "2018",
+        "country": "Brazil",
+        "description": "As a part-time intern, I developed projects independently. I attended several meetings with clients, which allowed me to understand what we should prioritize when discussing a project."
     }
 ]

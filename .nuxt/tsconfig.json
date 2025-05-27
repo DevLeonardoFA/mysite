@@ -104,11 +104,14 @@
       "#vue-router": [
         "../node_modules/vue-router"
       ],
+      "#unhead/composables": [
+        "../node_modules/nuxt/dist/head/runtime/composables/v3"
+      ],
       "#imports": [
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev"
+        "./manifest/meta/dev.json"
       ],
       "#components": [
         "./components"
@@ -149,9 +152,9 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "./nuxt.d.ts",
-    "../.config/nuxt.*",
     "../**/*",
+    "../.config/nuxt.*",
+    "./nuxt.d.ts",
     "../node_modules/nuxt-aos/runtime",
     "../node_modules/nuxt-aos/dist/runtime",
     "../node_modules/@nuxt/devtools/runtime",
@@ -162,6 +165,7 @@
   ],
   "exclude": [
     "../dist",
+    "../.data",
     "../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/nuxt-aos/node_modules",

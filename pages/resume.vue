@@ -7,9 +7,31 @@
             <!-- back button -->
             <NuxtLink to="/" class="back-button">
                 <!-- add arrow font awesome -->
-                <font-awesome-icon icon="fa-solid fa-arrow-left" />
+                <font-awesome-icon icon="fa-solid fa-arrow-left" width="22" height="22" />
                 Back to Home
             </NuxtLink>
+
+            
+
+            <div class="technologies">
+
+                <!-- add a row with the technologies in logo -->
+                <div class="row">
+                    
+                    <div class="slide_track">
+                        <img
+                        v-for="(technology, index) in tecnologies" :key="index"
+                        :src="technology.path" :alt="technology.name" class="tech" width="35" height="35">
+                        <img
+                        v-for="(technology, index) in tecnologies" :key="index"
+                        :src="technology.path" :alt="technology.name" class="tech" width="35" height="35">
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <hr>
 
             <div class="head">
 
@@ -45,38 +67,6 @@
                         <small>B2 - Basic (learning)</small>
                     </div>
                 </div>
-
-                <!-- <div class="tecnologies">
-                    
-                    <table class="tecnologies-table" border="1">
-                        <tr>
-                            <td>
-                                <h2>Tecnologies</h2>
-                            </td>
-                            <td>
-                                <h2>Years</h2>
-                            </td>
-                        </tr>
-
-
-                        <tr v-for="(tecnology, index) in tecnologies[0].tecnologies" :key="index">
-                            <td>
-                                <span class="tec">
-                                    {{ tecnology.name }}
-                                </span>
-                            </td>
-                            <td>
-                                <span class="years">
-                                    {{ tecnology.years }}
-                                </span>
-                            </td>
-                        </tr>
-                        
-
-
-                    </table>
-
-                </div> -->
 
             </div>
 
@@ -146,6 +136,9 @@
 
     // import font awesome
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+    import { library } from '@fortawesome/fontawesome-svg-core';
+    import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+    library.add(faArrowLeft);
 
     import tecnologies from '~/static/tecnologies.json';
     import experiences from '~/static/experiences.json';
@@ -177,6 +170,7 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-gap: 2rem;
+                margin: 2rem 0;
 
                 h2{
                     color: #fff;
@@ -268,11 +262,42 @@
                 }
             }
 
+            .technologies{
+                overflow: hidden;
+
+                .row{
+                    display: flex;
+                    
+                    .slide_track {
+                        display: flex;
+                        width: calc(200%);
+                        animation: infiniteSlide 25s linear infinite;
+                        
+                        img{
+                            width: 35px;
+                            margin-right: 1rem;
+                            object-fit: contain;
+                        }
+                    }
+
+                }
+            }
+
+            @keyframes infiniteSlide {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-75% - 35px));
+                }
+            }
+
             .resume-content{
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-gap: 2rem;
                 overflow: hidden;
+                margin-top: 2rem;
 
                 h2{
                     color: #fff;
