@@ -112,11 +112,11 @@
         "items": [
             {
                 "name": "Wordpress",
-                "path": "images/tech/Wordpress.svg"
+                "path": "images/tech/WordPress.svg"
             },
             {
                 "name": "Woocommerce",
-                "path": "images/tech/Woocommerce.svg"
+                "path": "images/tech/WooCommerce.svg"
             }
         ]
     },
