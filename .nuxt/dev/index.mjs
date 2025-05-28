@@ -1015,7 +1015,7 @@ const _qRekKWz1bmGtyrLwXtkygooZZgBJT3CumTGlxdG4 = (function(nitro) {
 
 const rootDir = "C:/Users/Leo/Desktop/mysite";
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"My Portifolio"},{"name":"format-detection","content":"telephone=no"}],"link":[],"style":[],"script":[],"noscript":[],"title":"Leonardo F. Alonso | Portifolio"};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"id":"description","name":"description","content":"My Portifolio"},{"name":"format-detection","content":"telephone=no"}],"link":[],"style":[],"script":[],"noscript":[],"title":"Leonardo F. Alonso | Portifolio"};
 
 const appRootTag = "div";
 

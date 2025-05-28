@@ -1,146 +1,132 @@
 [
     {
-        "name": "AdobeXD",
-        "path": "images/tech/AdobeXD.svg"
+        "GroupName": "Technologies",
+        "items": [
+            {
+                "name": "HTML5",
+                "path": "images/tech/HTML5.svg"
+            },
+            {
+                "name": "CSS3",
+                "path": "images/tech/CSS3.svg"
+            },
+            {
+                "name": "JavaScript",
+                "path": "images/tech/JavaScript.svg"
+            },
+            {
+                "name": "TypeScript",
+                "path": "images/tech/TypeScript.svg"
+            },
+            {
+                "name": "Vue",
+                "path": "images/tech/Vue.js.svg"
+            },
+            {
+                "name": "Nuxt",
+                "path": "images/tech/NuxtJS.svg"
+            },
+            {
+                "name": "React",
+                "path": "images/tech/React.svg"
+            },
+            {
+                "name": "Next",
+                "path": "images/tech/Next.js.svg"
+            },
+            {
+                "name": "Tailwind",
+                "path": "images/tech/TailwindCSS.svg"
+            },
+            {
+                "name": "Sass",
+                "path": "images/tech/Sass.svg"
+            },
+            {
+                "name": "Bootstrap",
+                "path": "images/tech/Bootstrap.svg"
+            },
+            {
+                "name": "Git",
+                "path": "images/tech/Git.svg"
+            },
+            {
+                "name": "Electron",
+                "path": "images/tech/Electron.svg"
+            },
+            {
+                "name": "GraphQL",
+                "path": "images/tech/GraphQL.svg"
+            }
+        ]
     },
     {
-        "name": "Azure",
-        "path": "images/tech/Azure.svg"
+        "GroupName": "Design Tools",
+        "items": [
+            {
+                "name": "Figma",
+                "path": "images/tech/Figma.svg"
+            },
+            {
+                "name": "AdobeXD",
+                "path": "images/tech/AdobeXD.svg"
+            },
+            {
+                "name": "Canva",
+                "path": "images/tech/Canva.svg"
+            },
+            {
+                "name": "Photoshop",
+                "path": "images/tech/Photoshop.svg"
+            }
+        ]
     },
     {
-        "name": "BitBucket",
-        "path": "images/tech/BitBucket.svg"
+        "GroupName": "Cloud",
+        "items": [
+            {
+                "name": "AWS",
+                "path": "images/tech/AWS.svg"
+            },
+            {
+                "name": "Azure",
+                "path": "images/tech/Azure.svg"
+            }
+        ]
     },
     {
-        "name": "Bootstrap",
-        "path": "images/tech/Bootstrap.svg"
+        "GroupName": "Databases",
+        "items": [
+            {
+                "name": "MySQL",
+                "path": "images/tech/MySQL.svg"
+            },
+            {
+                "name": "PostgreSQL",
+                "path": "images/tech/PostgresSQL.svg"
+            }
+        ]
     },
     {
-        "name": "Canva",
-        "path": "images/tech/Canva.svg"
+        "GroupName": "CMS",
+        "items": [
+            {
+                "name": "Wordpress",
+                "path": "images/tech/Wordpress.svg"
+            },
+            {
+                "name": "Woocommerce",
+                "path": "images/tech/Woocommerce.svg"
+            }
+        ]
     },
     {
-        "name": "CSS3",
-        "path": "images/tech/CSS3.svg"
-    },
-    {
-        "name": "Electron",
-        "path": "images/tech/Electron.svg"
-    },
-    {
-        "name": "Express",
-        "path": "images/tech/Express.svg"
-    },
-    {
-        "name": "Figma",
-        "path": "images/tech/Figma.svg"
-    },
-    {
-        "name": "Git",
-        "path": "images/tech/Git.svg"
-    },
-    {
-        "name": "GraphQL",
-        "path": "images/tech/GraphQL.svg"
-    },
-    {
-        "name": "HTML5",
-        "path": "images/tech/HTML5.svg"
-    },
-    {
-        "name": "Insomnia",
-        "path": "images/tech/Insomnia.svg"
-    },
-    {
-        "name": "JavaScript",
-        "path": "images/tech/JavaScript.svg"
-    },
-    {
-        "name": "jQuery",
-        "path": "images/tech/jQuery.svg"
-    },
-    {
-        "name": "JSON",
-        "path": "images/tech/JSON.svg"
-    },
-    {
-        "name": "MySQL",
-        "path": "images/tech/MySQL.svg"
-    },
-    {
-        "name": "NextJS",
-        "path": "images/tech/Next.js.svg"
-    },
-    {
-        "name": "NodeJS",
-        "path": "images/tech/Node.js.svg"
-    },
-    {
-        "name": "NPM",
-        "path": "images/tech/NPM.svg"
-    },
-    {
-        "name": "NuxtJS",
-        "path": "images/tech/NuxtJS.svg"
-    },
-    {
-        "name": "PHP",
-        "path": "images/tech/PHP.svg"
-    },
-    {
-        "name": "PostgreSQL",
-        "path": "images/tech/PostgresSQL.svg"
-    },
-    {
-        "name": "React",
-        "path": "images/tech/React.svg"
-    },
-    {
-        "name": "Sass",
-        "path": "images/tech/Sass.svg"
-    },
-    {
-        "name": "Slack",
-        "path": "images/tech/Slack.svg"
-    },
-    {
-        "name": "TailwindCSS",
-        "path": "images/tech/TailwindCSS.svg"
-    },
-    {
-        "name": "Trello",
-        "path": "images/tech/Trello.svg"
-    },
-    {
-        "name": "TypeScript",
-        "path": "images/tech/TypeScript.svg"
-    },
-    {
-        "name": "Vercel",
-        "path": "images/tech/Vercel.svg"
-    },
-    {
-        "name": "VisualStudioCode",
-        "path": "images/tech/VisualStudioCode.svg"
-    },
-    {
-        "name": "Vite.js",
-        "path": "images/tech/Vite.js.svg"
-    },
-    {
-        "name": "Vue.js",
-        "path": "images/tech/Vue.js.svg"
-    },
-    {
-        "name": "Woocommerce",
-        "path": "images/tech/Woocommerce.svg"
-    },
-    {
-        "name": "WordPress",
-        "path": "images/tech/WordPress.svg"
-    },
-    {
-        "name": "Yarn",
-        "path": "images/tech/Yarn.svg"
+        "GroupName": "API Tools",
+        "items": [
+            {
+                "name": "Insomnia",
+                "path": "images/tech/Insomnia.svg"
+            }
+        ]
     }
 ]

@@ -11,27 +11,6 @@
                 Back to Home
             </NuxtLink>
 
-            
-
-            <div class="technologies">
-
-                <!-- add a row with the technologies in logo -->
-                <div class="row">
-                    
-                    <div class="slide_track">
-                        <img
-                        v-for="(technology, index) in tecnologies" :key="index"
-                        :src="technology.path" :alt="technology.name" class="tech" width="35" height="35">
-                        <img
-                        v-for="(technology, index) in tecnologies" :key="index"
-                        :src="technology.path" :alt="technology.name" class="tech" width="35" height="35">
-                    </div>
-                    
-                </div>
-
-            </div>
-
-            <hr>
 
             <div class="head">
 
@@ -116,6 +95,29 @@
                     </div>
                     
 
+                </div>
+
+            </div>
+
+            <div class="technologies">
+
+                
+
+                <!-- add a row with the technologies in logo -->
+                <div class="row">
+
+                    <div class="group" v-for="(group, index) in tecnologies" :key="index">
+
+                        <h2 class="technologies">
+                            {{group.GroupName}}
+                        </h2>
+                        
+                        <div class="item" >
+                            <img v-for="(item, index) in group.items" :key="index" :src="item.path" :alt="item.name">
+                        </div>
+
+                    </div>
+                    
                 </div>
 
             </div>
@@ -265,17 +267,20 @@
             .technologies{
                 overflow: hidden;
 
+                h2{
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 3rem;
+                    margin-bottom: 2rem;
+                }
+
                 .row{
-                    display: flex;
                     
-                    .slide_track {
-                        display: flex;
-                        width: calc(200%);
-                        animation: infiniteSlide 25s linear infinite;
-                        
+                    .item {
+
                         img{
-                            width: 35px;
-                            margin-right: 1rem;
+                            width: 75px;
+                            margin: 0 2rem 2rem 0;
                             object-fit: contain;
                         }
                     }
@@ -283,14 +288,14 @@
                 }
             }
 
-            @keyframes infiniteSlide {
+            /* @keyframes infiniteSlide {
                 0% {
                     transform: translateX(0);
                 }
                 100% {
                     transform: translateX(calc(-75% - 35px));
                 }
-            }
+            } */
 
             .resume-content{
                 display: grid;

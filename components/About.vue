@@ -147,6 +147,7 @@
 
               .text{
                 text-align: left;
+                width: 100%;
 
                 h2{
                     font-size: 3rem;

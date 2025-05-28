@@ -5,7 +5,7 @@
                 "name": "Mamachi",
                 "description": "",
                 "url": "https://mamachi.com.mt/",
-                "image": "Mamachi.svg",
+                "image": "images/sites/Mamachi.svg",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "Steves&Co",
@@ -17,7 +17,7 @@
                 "name": "Lidion Bank",
                 "description": "",
                 "url": "https://onboard.lidionbank.com/",
-                "image": "Lidion.svg",
+                "image": "images/sites/Lidion.svg",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "Steves&Co",
@@ -29,7 +29,7 @@
                 "name": "Uniplural",
                 "description": "",
                 "url": "https://www.uniplural.com/",
-                "image": "UnipluralGroup.svg",
+                "image": "images/sites/UnipluralGroup.svg",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "Steves&Co",
@@ -41,7 +41,7 @@
                 "name": "Uniplural Academy",
                 "description": "",
                 "url": "https://unipluralacademy.com/",
-                "image": "UnipluralAcademy.png",
+                "image": "images/sites/UnipluralAcademy.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "Steves&Co",
@@ -53,7 +53,7 @@
                 "name": "Uniplural ChildCare",
                 "description": "",
                 "url": "https://unipluralchildcare.com/",
-                "image": "UnipluralChildCare.svg",
+                "image": "images/sites/UnipluralChildCare.svg",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "Steves&Co",
@@ -65,7 +65,7 @@
                 "name": "The Balcony Collection",
                 "description": "",
                 "url": "https://dbalconycollection.com/",
-                "image": "TheBalconyCollection.svg",
+                "image": "images/sites/TheBalconyCollection.svg",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "Steves&Co",
@@ -77,7 +77,7 @@
                 "name": "Andaria",
                 "description": "",
                 "url": "https://andaria.com/",
-                "image": "Andaria.svg",
+                "image": "images/sites/Andaria.svg",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "Steves&Co",
@@ -89,7 +89,7 @@
                 "name": "Covo",
                 "description": "",
                 "url": "https://covo.mt/",
-                "image": "Covo.svg",
+                "image": "images/sites/Covo.svg",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "Steves&Co",
@@ -101,7 +101,7 @@
                 "name": "HimaFlex",
                 "description": "",
                 "url": "https://www.himaflex.com.br/",
-                "image": "Himaflex.png",
+                "image": "images/sites/Himaflex.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -113,7 +113,7 @@
                 "name": "BFEquipamentos",
                 "description": "",
                 "url": "https://www.bfequipamentos.com.br/",
-                "image": "BF.webp",
+                "image": "images/sites/BF.webp",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -125,7 +125,7 @@
                 "name": "Imperio Motors",
                 "description": "",
                 "url": "https://imperiomotors.com.br/",
-                "image": "ImperioMotors.webp",
+                "image": "images/sites/ImperioMotors.webp",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -137,7 +137,7 @@
                 "name": "Liandretta",
                 "description": "",
                 "url": "https://www.liandretta.com.br/",
-                "image": "LiAndretta.png",
+                "image": "images/sites/LiAndretta.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -149,7 +149,7 @@
                 "name": "RetinaWeb",
                 "description": "",
                 "url": "https://www.retinaweb.com.br/",
-                "image": "RetinaWeb.png",
+                "image": "images/sites/RetinaWeb.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -161,7 +161,7 @@
                 "name": "JG Lab",
                 "description": "",
                 "url": "https://jglab.com.br/",
-                "image": "JGLab.webp",
+                "image": "images/sites/JGLab.webp",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -173,7 +173,7 @@
                 "name": "Pinheiro de Morais",
                 "description": "",
                 "url": "https://pinheirodemorais.com.br/",
-                "image": "PinheirodeMoraes.png",
+                "image": "images/sites/PinheirodeMoraes.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -185,7 +185,7 @@
                 "name": "Vizuri",
                 "description": "",
                 "url": "https://vizuri.com.br/",
-                "image": "Vizuri.webp",
+                "image": "images/sites/Vizuri.webp",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -197,7 +197,7 @@
                 "name": "TGL Expertise",
                 "description": "",
                 "url": "https://tglexpertise.com.br/",
-                "image": "TGL.png",
+                "image": "images/sites/TGL.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -209,7 +209,7 @@
                 "name": "Sabbia",
                 "description": "",
                 "url": "https://sabbia.com.br/",
-                "image": "SABBIA.png",
+                "image": "images/sites/SABBIA.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -221,7 +221,7 @@
                 "name": "JOIN Arquitetos",
                 "description": "",
                 "url": "https://joinarquitetos.com/",
-                "image": "Join.webp",
+                "image": "images/sites/Join.webp",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -233,7 +233,7 @@
                 "name": "Brazil TC (pt-br)",
                 "description": "",
                 "url": "https://braziltc.com.br/",
-                "image": "Btc.png",
+                "image": "images/sites/Btc.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -245,7 +245,7 @@
                 "name": "Brazil TC (en)",
                 "description": "",
                 "url": "https://braziltc.com/",
-                "image": "Btc.png",
+                "image": "images/sites/Btc.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -257,7 +257,7 @@
                 "name": "Grupo VRV",
                 "description": "",
                 "url": "https://www.grupovrv.com.br/",
-                "image": "VRV.png",
+                "image": "images/sites/VRV.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -269,7 +269,7 @@
                 "name": "Antonio Queiroz",
                 "description": "",
                 "url": "https://drantonioqueiroz.com.br/",
-                "image": "AntonioQueiroz.webp",
+                "image": "images/sites/AntonioQueiroz.webp",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -281,7 +281,7 @@
                 "name": "Original King",
                 "description": "",
                 "url": "https://originalking.com.br/",
-                "image": "OKing.png",
+                "image": "images/sites/OKing.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
@@ -293,7 +293,7 @@
                 "name": "Terra Mel",
                 "description": "",
                 "url": "https://terramel.com.br/",
-                "image": "TerraMel.png",
+                "image": "images/sites/TerraMel.png",
                 "developed": "Project developed at",
                 "at": {
                     "companyname": "RetinaWeb",
